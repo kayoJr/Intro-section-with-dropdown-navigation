@@ -618,7 +618,7 @@ body {
 @media (min-width: 768px) {
   .main__image {
     background-image: url(../img/image-hero-desktop.png);
-    height: 70rem;
+    height: 58rem;
     grid-column: 2/3;
     margin-top: 8rem;
     margin-bottom: 2rem;
@@ -678,10 +678,5 @@ body {
   justify-content: space-between;
   max-width: 90%;
   margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .about__clients {
-    margin-top: 10rem;
-  }
 }
 /*# sourceMappingURL=app.css.map */
