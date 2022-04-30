@@ -603,7 +603,7 @@ body {
     gap: 15rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: unset;
-    max-width: 80%;
+    max-width: 78%;
     margin: 0 auto;
   }
 }
@@ -618,7 +618,7 @@ body {
 @media (min-width: 768px) {
   .main__image {
     background-image: url(../img/image-hero-desktop.png);
-    height: 58rem;
+    height: 62rem;
     grid-column: 2/3;
     margin-top: 8rem;
     margin-bottom: 2rem;
@@ -678,5 +678,10 @@ body {
   justify-content: space-between;
   max-width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .about__clients {
+    margin-top: 3rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */
