@@ -1,0 +1,66 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m; 
+body{
+    background-color: v.$blanco;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    @include m.tablet {
+        @include m.grid(2,15rem);
+        grid-template-rows: unset;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    &__image{
+        background-image: url(../img/image-hero-mobile.png);
+        height: 30rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        grid-row: 1/2;
+        margin-top: 3rem;
+        @include m.tablet {
+            background-image: url(../img/image-hero-desktop.png);
+            height: 70rem;
+            grid-column: 2/3;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
+        }
+    }
+    
+}
+.about{
+    text-align: center;
+    @include m.tablet {
+        margin-top: 10rem;
+        text-align: left;
+    }
+    &__heading{
+        @include m.tablet {
+            margin-top: 8rem;
+            font-size: 7rem;
+        }
+    }
+    &__info{
+        line-height: 1.8;
+    }
+    &__button{
+        @include m.boton(v.$negro, v.$blanco);
+        display: inline-block;
+        @include m.tablet {
+            margin-top: 2rem;
+        }
+    }
+    &__clients{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 0 auto;
+        @include m.tablet {
+            margin-top: 10rem;
+        }
+    }
+}
